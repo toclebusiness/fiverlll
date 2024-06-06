@@ -61,4 +61,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
+function showPopup(title, description) {
+    document.getElementById('popup-title').innerText = title;
+    document.getElementById('popup-description').innerText = description;
+    document.getElementById('popup').style.display = 'flex';
+}
+
+function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+}
+
+function inquire() {
+    alert('Inquiry function is not yet implemented.');
+}
+
+function buy() {
+    alert('Purchase function is not yet implemented.');
+}
 
